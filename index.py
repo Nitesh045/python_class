@@ -35,45 +35,45 @@
 # # #\
 
 
-# Apple_GST=0.12
-# Orange_GST=0.05
+Apple_GST=0.12
+Orange_GST=0.05
 
 
 # # buyer name 
-# buyer_name= input("Enter buyer name :")
-# apple_price_kg= int(input("Enter Apple price per kg: "))
-# apple_quantity_kg=float(input("Enter apple Quantity: "))
-# orange_price_kg=int(input("Enter Orange price per kg: "))
-# orange_quantity_kg=float(input("Enter orange Quantity: "))
-# # step 3 to calculate the price without gst
-# total_priceApple= apple_price_kg * apple_quantity_kg
-# total_priceOrange= orange_price_kg * orange_quantity_kg
-# # calculate price with gst
-# total_gst_priceA=total_priceApple * Apple_GST
-# total_gst_priceO= total_priceOrange * Orange_GST
-# # now evaluting total price of apple 
-# priceofapple= total_priceApple +total_gst_priceA
-# priceoforange= total_priceOrange +total_gst_priceO
-# # total amount on bill 
-# totalBillAm=priceofapple+priceoforange
-# total_roundAmount= round(totalBillAm)
+buyer_name= input("Enter buyer name :")
+apple_price_kg= int(input("Enter Apple price per kg: "))
+apple_quantity_kg=float(input("Enter apple Quantity: "))
+orange_price_kg=int(input("Enter Orange price per kg: "))
+orange_quantity_kg=float(input("Enter orange Quantity: "))
+# step 3 to calculate the price without gst
+total_priceApple= apple_price_kg * apple_quantity_kg
+total_priceOrange= orange_price_kg * orange_quantity_kg
+# calculate price with gst
+total_gst_priceA=total_priceApple * Apple_GST
+total_gst_priceO= total_priceOrange * Orange_GST
+# now evaluting total price of apple 
+priceofapple= total_priceApple +total_gst_priceA
+priceoforange= total_priceOrange +total_gst_priceO
+# total amount on bill 
+totalBillAm=priceofapple+priceoforange
+total_roundAmount= round(totalBillAm)
 
 
-# print(f"\nBuyer name :{buyer_name}")
-# print(f"{'-'*74}")
-# print(f"| {'Item Code':^10} | {'Price/Unit':^10} | {'# unit':^5}",
-#       f"| {'Price':^5} | {'GST':^10} | {'Total w/ GST':^10} |")
-# print(f"{'-'*74}")
-# print(f"| {'Apple':^10} | {'Rs'+str(apple_price_kg):^10} | {apple_quantity_kg:^5}",
-#       f"| {'Rs'+str(total_priceApple):^5} | {'Rs'+str(total_gst_priceA):^10}",
-#       f"| {'Rs'+str(total_gst_priceA):^10}")
-# print(f"| {'Orange':^10} | {'Rs'+str(orange_price_kg):^10} | {orange_quantity_kg:^5}",
-#       f"| {'Rs'+str(total_priceOrange):^5} | {'Rs'+str(total_gst_priceO):^10}",
-#       f"| {'Rs'+str(total_gst_priceO):^10}")
-# print(f"{'-'*74}")
-# print(f"Total {' '*54} \u20b9 {totalBillAm:.2f}")
-# print(f"Total Round {' '*48} \u20b9 {total_roundAmount:.2f}")
-# print(f"{'-'*74}")
+print(f"\nBuyer name :{buyer_name}")
+print(f"{'-'*74}")
+print(f"| {'Item Code':^10} | {'Price/Unit':^10} | {'# unit':^5}",
+      f"| {'Price':^5} | {'GST':^10} | {'Total w/ GST':^10} |")
+print(f"{'-'*74}")
+print(f"| {'Apple':^10} | {'Rs'+str(apple_price_kg):^10} | {apple_quantity_kg:^5}",
+      f"| {'Rs'+str(total_priceApple):^5} | {'Rs'+str(total_gst_priceA):^10}",
+      f"| {'Rs'+str(total_gst_priceA):^10}")
+print(f"| {'Orange':^10} | {'Rs'+str(orange_price_kg):^10} | {orange_quantity_kg:^5}",
+      f"| {'Rs'+str(total_priceOrange):^5} | {'Rs'+str(total_gst_priceO):^10}",
+      f"| {'Rs'+str(total_gst_priceO):^10}")
+print(f"{'-'*74}")
+print(f"Total {' '*54} \u20b9 {totalBillAm:.2f}")
+print(f"Total Round {' '*48} \u20b9 {total_roundAmount:.2f}")
+print(f"{'-'*74}")
 
 
 def addingSum(a:int,b:int):
